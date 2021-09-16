@@ -23,15 +23,11 @@ public class Main {
         Championships counterStrike = new Championships("Mochilovo", "Counter-Strike", "22.12.2021", "Russia");
 
         //информация о первом турнире
-        System.out.println("Tournament" + " " + fifa.tournament + " " + "will be conducted by" + " " + fifa.date + ". " + "list of players who participate" + " ");
-        for (int i = 0; i < listGamers1.length; i++) {
-            System.out.println(listGamers1[i]);
-        }
+        System.out.println("Tournament" + " " + fifa.tournament + " " + "will be conducted by" + " " + fifa.date + ". " + "list of players who participate" + " :");
+        fifa.ListOfParticipants(listGamers1);
 
         //информация о втором турнире
-        System.out.println("Tournament" + " " + counterStrike.tournament + " " + "will be conducted by" + " " + counterStrike.date + ". " + "list of players who participate" + " ");
-        for (int i = 0; i < listGamers2.length; i++) {
-            System.out.println(listGamers2[i]);
-        }
+        System.out.println("Tournament" + " " + counterStrike.tournament + " " + "will be conducted by" + " " + counterStrike.date + ". " + "list of players who participate" + " :");
+        counterStrike.ListOfParticipants(listGamers2);
     }
 }
