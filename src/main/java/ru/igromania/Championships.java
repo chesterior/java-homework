@@ -5,7 +5,7 @@ public class Championships {
     String gameNames; //название игры
     String date; // дата турнира
     String country; // страна проведения
-    Gamers [] participants; // список участников
+    Gamers[] participants; // список участников
 
     public Championships(String tournament, String gameNames, String date, String country) {
         this.tournament = tournament;
@@ -14,9 +14,9 @@ public class Championships {
         this.country = country;
     }
 
-    public void ListOfParticipants(Gamers[] list){
-        for (int i = 0; i < list.length; i++) {
-            System.out.println(list[i].name + " " + list[i].team + " " + list[i].country);
+    public void ListOfParticipants(Gamers[] gamers){
+        for (int i = 0; i < gamers.length; i++) {
+            System.out.println(gamers[i].name + " " + gamers[i].team + " " + gamers[i].country);
         }
     }
 }
